@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>ACM @ USF - Calendar</title>
+</head>
+<body data-bs-theme="dark" style="height: 100vh">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 py-3 nav-fill sticky-top">
+    <div class="container-fluid w-100">
+      <!--                TODO change index.html to /-->
+      <a class="navbar-brand" href="/index.html">ACM @ USF</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <!--                TODO change index.html to /-->
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Events
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/events/flagships">Flagships</a></li>
+              <li><a class="dropdown-item active" href="/events/calendar">Calendar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/about/org">ACM</a></li>
+              <li><a class="dropdown-item" href="/about/board">Our Board</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid w-100">
+    <div class="row h-100 text-bg-success py-5">
+      <div class="col h-100">
+        <div class="d-flex h-100 align-items-center justify-content-center">
+          <h1 class="text-center">This Month's Events:</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid h-75 w-100 m-0 p-0">
+    <iframe src="https://calendar.google.com/calendar/embed?height=1200&wkst=1&ctz=America%2FLos_Angeles&bgcolor=%23ffffff&showTitle=0&showNav=0&showTabs=0&showCalendars=0&src=Y183ZTQ5ZThmMjgxYTY0ZjI5NzI2NDUyZTUyY2M3ODRmNzFmOTZmMGYyMWI0M2U5NTk4OWM1ZDFmMzkyY2VhZWEwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%239E69AF" style="border-width:0; filter: invert(.9) saturate(0.5) hue-rotate(270deg);" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+  </div>
+</body>
+</html>

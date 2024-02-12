@@ -1,0 +1,25 @@
+.shiny {
+    /*color: darkgreen;*/
+    position: relative;
+    border: none;
+    padding: 10px 15px;
+    /*background: black;*/
+    /*overflow: hidden;*/
+}
+
+.shiny::after {
+    content: '';
+    position: absolute;
+    top: calc(var(--y, 0) * 1px - 250px);
+    left: calc(var(--x, 0) * 1px - 250px);
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(darkgreen, black 80%);
+
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.shiny:hover::after {
+    opacity: 0.4;
+}
